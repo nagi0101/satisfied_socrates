@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello HTML!</title>
+</head>
+
+<body>
+    <header>
+        <h1>배부른 소크라테스!</h1>
+        <hr>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="./index0.html" target="_self">Hello HTML!</a></li>
+            <li><a href="./index1.html" target="_self">Hello Satisfied Socrates!</a></li>
+        </ul>
+    </nav>
+
+    <center>
+        <h2>Hello HTML!</h2>
+    </center>
+
+    <nav>
+        <h3>개요</h3>
+        <ol>
+            <li>
+                <a href="#h">h1~h6</a>
+            </li>
+            <li>
+                <a href="#list">목록</a>
+                <ul>
+                    <li>ul</li>
+                    <li>ol</li>
+                    <li>li</li>
+                </ul>
+            </li>
+            <li><a href="#a">a</a></li>
+            <li><a href="#img">img</a></li>
+            <li>
+                <a href="#form">form</a>
+            </li>
+        </ol>
+    </nav>
+
+    <div>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio at officia mollitia rem iste doloremque vel
+        molestiae, distinctio officiis nesciunt ratione nostrum? Est dicta consequuntur nostrum aut similique ipsum
+        quam?<br>Optio aspernatur cupiditate numquam, porro rem veritatis blanditiis expedita libero, ipsam iure
+        excepturi
+        voluptas est eius error cumque, velit a molestiae quidem dignissimos maiores iusto neque sunt quas vero?
+        Quod?<br>Distinctio ex id corporis facere ea doloribus ducimus tempora officia, consectetur esse culpa quis?
+        Totam
+        fuga doloribus tempora voluptas suscipit delectus dicta sapiente. Placeat, natus illum dolores eaque iure
+        iste!<br>Libero eos quaerat esse, molestias laudantium vero id optio quidem est fugit exercitationem nisi
+        obcaecati
+        ad eius, qui corporis. Mollitia voluptatem neque architecto placeat voluptatibus. Atque officiis praesentium
+        tenetur
+        architecto.<br>Omnis dolor illo, tenetur dolorem veniam, vero magnam corporis error, dolores eligendi culpa.
+        Nobis
+        veritatis aspernatur, dignissimos laudantium cupiditate porro debitis sint placeat voluptatum cum a adipisci
+        repudiandae totam libero.<br>
+    </div>
+
+    <main>
+        <section id="h">
+            <h3>h1~h6</h3>
+            <p>제목은 h1부터 h6 태그를 통해, 큰 제목부터 작은 제목 순으로 표현할 수 있다.</p>
+        </section>
+
+        <section id="list">
+            <h3>목록</h3>
+            <p>목록을 나타낼 땐 ul이나 ol 안에 li를 넣어 표시할 수 있다!</p>
+
+            <details>
+                <summary>ul</summary>
+                HTML &lt;ul&gt; 요소는 정렬되지 않은 목록을 나타냅니다. 보통 불릿으로 표현합니다.
+            </details>
+
+            <details>
+                <summary>ol</summary>
+                HTML &lt;ol&gt; 요소는 정렬된 목록을 나타냅니다. 보통 숫자 목록으로 표현합니다.
+            </details>
+
+            <details>
+                <summary>li</summary>
+                HTML &lt;li&gt; 요소는 목록의 항목을 나타냅니다. 반드시 정렬 목록(&lt;ol&gt;), 비정렬 목록(&lt;ul&gt;, 혹은 메뉴(&lt;menu&gt;) 안에 위치해야
+                합니다. 메뉴와 비정렬 목록에서는 보통 불릿으로 항목을 나타내고, 정렬 목록에서는 숫자나 문자를 사용한 오름차순 카운터로 나타냅니다.
+            </details>
+
+            <div>
+                <span>이건 어떻게 할까?</span>
+                <ol reversed>
+                    <li>첫 번째</li>
+                    <li>두 번째</li>
+                    <li>세 번째</li>
+                    <li>네 번째</li>
+                </ol>
+            </div>
+        </section>
+
+        <section id="a">
+            <h3>a</h3>
+            <p>a 태그를 사용할 때는 href attribute를 통해 무슨 페이지를 열지 지정해야한다. target attribute를 통해 페이지를 현재 페이지에서 열지 새로운 페이지에서 열지도
+                설정할 수 있으니 참고하자!</p>
+            <ul>
+                <li><a href="https://www.google.com/" target="_blank">새 창에서 열기</a></li>
+                <li><a href="https://www.google.com/" target="_self">현재 창에서 열기</a></li>
+            </ul>
+        </section>
+
+        <section id="img">
+            <h3>img</h3>
+            <p>img 태그를 사용할 때는 항상 ref attribute를 통해 이미지 파일의 경로를 지정해주어야 한다. url 또는 상대경로/절대경로를 통해 로컬에 있는 파일을 지정하자!</p>
+            <img src="./images/cat.jpg" alt="하얀 고양이" height="700">
+            <img src="https://placekitten.com/500/700" alt="고양이들">
+        </section>
+
+        <section id="form">
+            <h3>form</h3>
+            <p>form과 input 태그를 통해 사용자들로부터 여러가지 입력을 받을 수 있다. 여러가지 input들을 시도해보자!</p>
+            <form>
+                <div><label for="id">ID: </label><input type="text" id="text"></div>
+                <div><label for="password">PW: </label><input type="password" id="password"></div>
+                <div><label for="email">Email: </label><input type="email" id="email"></div>
+                <div><label for="tel">Tel: </label><input type="tel" pattern="[0-9]{3}-[0-9]{4}-[0-9]{4}" id="tel"><small>xxx-xxxx-xxxx</small></div>
+                <div><label for="color">Color: </label><input type="color" id="color"></div>
+                <div><label for="file">Image: </label><input type="file" id="file" accept="image/*"></div>
+                <div><label for="time">Time: </label><input type="time" id="time"></div>
+                <div><label for="date">Date: </label><input type="date" id="date"></div>
+                <div><label for="week">Week: </label><input type="week" id="week"></div>
+                <div><label for="month">Month: </label><input type="month" id="month"></div>
+                <div><label for="checkbox">Checkbox: </label><input type="checkbox" id="checkbox"></div>
+                <div><label for="radio_x">Radio_x: </label><input type="radio" name="radio" id="radio_x"></div>
+                <div><label for="radio_y">Radio_y: </label><input type="radio" name="radio" id="radio_y"></div>
+                <div><label for="radio_z">Radio_z: </label><input type="radio" name="radio" id="radio_z"></div>
+                <button type="submit">제출</button>
+                <button type="reset">초기화</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <hr>
+        <span>
+            <a href="http://sophia.khu.ac.kr/" target="_blank">경희대학교 철학과</a> 동아리
+            <a href="https://www.youtube.com/@satisfiedsocrates" target="_blank">배부른 소크라테스</a>
+        </span>
+    </footer>
+</body>
+
+</html>
