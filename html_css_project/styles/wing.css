@@ -72,9 +72,58 @@
 #wing #wing_page_2+label .front {
     align-items: center;
     justify-content: center;
+    text-align: start;
+    line-height: 2rem;
+    font-size: 1rem;
+    font-weight: 100;
+}
+
+#wing #wing_page_2+label .front>h3 {
+    width: 80%;
+    font-weight: 700;
+    font-size: 1.5rem;
+    padding-bottom: 0.3rem;
+    border-bottom: 1px solid var(--color-sub);
+    margin-bottom: 1.5rem;
+}
+
+#wing #wing_page_2+label .front>ul {
+    list-style-type: square;
+    padding-left: 3rem;
+}
+
+#wing #wing_page_2+label .back {
+    align-items: center;
+    justify-content: center;
     text-align: center;
     line-height: 2rem;
     font-size: 1.5rem;
-    font-weight: 100;
+    font-weight: 500;
     font-style: italic;
+}
+
+#wing #wing_page_3+label .front {
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+}
+
+#wing #wing_page_3+label .back {
+    padding: 2rem;
+    align-items: center;
+    justify-content: center;
+    text-align: start;
+    line-height: 3rem;
+    font-size: 1.3rem;
+    font-weight: 100;
+}
+
+#wing #wing_page_4+label .front {
+    padding: 2rem;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    line-height: 3rem;
+    font-size: 2rem;
+    font-weight: 7800;
 }
