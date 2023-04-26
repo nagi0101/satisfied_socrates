@@ -1,5 +1,5 @@
 .book {
-    --book-width: 40vw;
+    --book-width: 50vw;
     --page-ratio: 1.6184;
     position: relative;
     left: calc(var(--book-width) / 2);
