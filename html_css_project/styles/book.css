@@ -37,6 +37,7 @@
     height: 100%;
     background-color: var(--color-main);
     backface-visibility: hidden;
+    overflow: hidden;
 }
 
 .book .page>.page_content.back {
