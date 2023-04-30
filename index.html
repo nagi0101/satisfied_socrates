@@ -7,25 +7,54 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>배부른 소크라테스!</title>
     <style>
-        iframe#frame {
-            position: fixed;
-            top: 0;
-            left: 0;
-            bottom: 0;
-            right: 0;
-            width: 100%;
-            height: 100%;
-            border: none;
+        html, 
+        body {
             margin: 0;
             padding: 0;
-            overflow: hidden;
-            z-index: 999999;
+            height: 100%;
+            width: 100%;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background-color: #FFDFB9;
+        }
+
+        a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            width: 8rem;
+            height: 4rem;
+            background-color: #FFDFB9;
+            text-decoration: none;
+            color: #A4193D;
+            font-weight: bold;
+            border: 4px solid #A4193D;
+            border-radius: 1rem;
+            margin: 2rem;
+            font-size: 1.5rem;
+            transition: 0.5s;
+        }
+
+        a:hover {
+            transform: scale(1.05);
+            box-shadow: 5px 10px 10px #D27C7B;
+            background-color: #A4193D;
+            color: #FFDFB9;
         }
     </style>
 </head>
 
 <body>
-    <iframe id="frame" src="./html_css_project/index.html" frameborder="0"></iframe>
+    <a target="_blank" href="./html_css_project/박지인/index.html">박지인</a>
+    <a target="_blank" href="./html_css_project/장한얼/khLogin/khlogin.html">장한얼</a>
+    <a target="_blank" href="./html_css_project/정유진/japtel.html">정유진</a>
+    <a target="_blank" href="./html_css_project/조승지/bg.html">조승지</a>
 </body>
 
 </html>

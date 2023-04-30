@@ -1,0 +1,27 @@
+section {
+    box-sizing: border-box;
+    width: 94%;
+    height: 100%;
+    margin: 3%;
+    padding: 1rem 2rem 3rem 2rem;
+    border: 2px solid #FFD662;
+    border-radius: 10px 0px 10px 0px;
+    color: #FFD662;
+    background-color: #00539C;
+}
+
+h2 {
+    border-bottom: 2px solid #FFD662;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 600;
+    font-size: 1.5rem;
+    margin-bottom: 3%;
+    padding-bottom: 0.5rem;
+}
+
+main {
+    background-color: white;
+    padding-top: 5rem;
+    position: relative;
+    z-index: 2;
+}

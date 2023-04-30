@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>영화</title>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      background-color: black;
+      color: white;
+      font-family: sans-serif;
+    }
+
+    .background {
+      background-image: url('C:/Users/a/Pictures/스크린샷 2023-04-29 224748.png');
+      background-size: cover;
+      background-position: center;
+      background-clip: content-box;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      z-index: -1;
+    }
+
+    .background > img {
+      width: 100%;
+      height: 100%;
+
+    }
+
+    .menu {
+      bottom: 10%;
+      right: 10%;
+      position: fixed;
+    }
+
+    .main {
+      z-index: 2;
+      position: absolute;
+      /* overflow: hidden; */
+      width: 100%;
+      height: 100%;
+    }
+
+    .screen {
+      content: "";
+      position: absolute;
+      top: 2%;
+      left: 18%;
+      width: 66.5%;
+      height: 59%;
+      border-radius: 0%;
+      background-color: rgba(255, 255, 255, 1);
+      z-index: 0;
+      overflow-y: scroll;
+    }
+
+    .card {
+      display: flex;
+      align-items: center;
+      margin-bottom: 300px;
+      margin-right: 20px;
+      position: sticky;
+      top: 0%;
+      left: 0%;
+      width: 250px;
+      height: 300px;
+      perspective: 1000px;
+      z-index: 9;
+    }
+
+    .front,
+    .back {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      backface-visibility: hidden;
+      transition: transform 0.5s;
+    }
+
+    .front {
+      background-color: #ffffff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 40px;
+      font-weight: bold;
+      z-index: 9;
+    }
+
+    .back {
+      position: absolute;
+      top: 40px;
+      left: 25px;
+      right: 20px;
+      bottom: 20px;
+      width: 1450px;
+      height: 600px;
+      transform: rotateY(180deg);
+      border-radius: 0%;
+      background-color: rgba(255, 255, 255, 0.5);
+      z-index: 99;
+    }
+
+    .video-container {
+      display: none;
+      z-index: 99;
+    }
+
+    .card.is-flipped .front {
+      transform: rotateY(180deg);
+    }
+
+    .card.is-flipped .back {
+      transform: rotateY(0deg);
+    }
+  </style>
+</head>
+
+<body>
+  <div class="menu">
+    <img src="./images/스크린샷 2023-04-30 022048.png" alt="메뉴">
+  </div>
+
+  <div class="background">
+    <div class="screen">
+      <div class="main">
+        <div class="card">
+          <div class="card-item">
+            <img class="front" src="./images/스크린샷 2023-04-30 010035.png" alt="영화 포스터">
+            <div class="back">
+              <div class="video-container">
+                <video width="1450" height="600" controls>
+                  <source src="./videos/videoplayback.mp4" type="video/mp4">
+                </video>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-item">
+            <img class="front" src="./images/스크린샷 2023-04-30 010158.png" alt="영화 포스터">
+            <div class="back">
+              <div class="video-container">
+                <video width="1450" height="600" controls>
+                  <source src="./videos/죽은 시인의 사회 (Dead Poets Society, 1989) 재개봉 메인 예고편 - 한글 자막.mp4" type="video/mp4">
+                </video>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-item">
+            <img class="front" src="./images/스크린샷 2023-04-30 010306.png" alt="영화 포스터">
+            <div class="back">
+              <div class="video-container">
+                <video width="1450" height="600" controls>
+                  <source src="./videos/[킹스맨_ 시크릿 에이전트] 메인 예고편.mp4" type="video/mp4">
+                </video>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-item">
+            <img class="front" src="./images/스크린샷 2023-04-30 010632.png" alt="영화 포스터">
+            <div class="back">
+              <div class="video-container">
+                <video width="1450" height="600" controls>
+                  <source src="./videos/[탑건_ 매버릭] 메인 예고편.mp4" type="video/mp4">
+                </video>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-item">
+            <img class="front" src="./images/스크린샷 2023-04-30 010737.png" alt="영화 포스터">
+            <div class="back">
+              <div class="video-container">
+                <video width="1450" height="600" controls>
+                  <source src="./videos/타짜 예고편.mp4" type="video/mp4">
+                </video>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-item">
+            <img class="front" src="./images/스크린샷 2023-04-30 010938.png" alt="영화 포스터">
+            <div class="back">
+              <div class="video-container">
+                <video width="1450" height="600" controls>
+                  <source src="./videos/videoplayback.mp4" type="video/mp4">
+                </video>
+              </div>
+            </div>브이포
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-item">
+            <img class="front" src="./images/스크린샷 2023-04-30 011044.png" alt="영화 포스터">
+            <div class="back">
+              <div class="video-container">
+                <video width="1450" height="600" controls>
+                  <source src="./videos/videoplayback.mp4" type="video/mp4">
+                </video>
+              </div>
+            </div>소울
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-item">
+            <img class="front" src="./images/스크린샷 2023-04-30 011315.png" alt="영화 포스터">
+            <div class="back">
+              <div class="video-container">
+                <video width="1450" height="600" controls>
+                  <source src="./videos/videoplayback.mp4" type="video/mp4">
+                </video>
+              </div>
+            </div>밀
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-item">
+            <img class="front" src="./images/스크린샷 2023-04-30 011410.png" alt="영화 포스터">
+            <div class="back">
+              <div class="video-container">
+                <video width="1450" height="600" controls>
+                  <source src="./videos/videoplayback.mp4" type="video/mp4">
+                </video>
+              </div>
+            </div>엔
+          </div>
+        </div>
+      </div>
+    </div>
+    <img src="./images/스크린샷 2023-04-29 224777.png" />
+  </div>
+
+  <script>
+    $(document).ready(function () {
+      $('.card').click(function () {
+        const videoContainer = $(this).find('.video-container');
+        if (videoContainer.is(':visible')) {
+          // 동영상이 이미 열려 있는 경우
+          videoContainer.hide();
+        } else {
+          // 동영상이 열려 있지 않은 경우
+          $('.video-container').hide();
+          videoContainer.show();
+        }
+      });
+    });
+
+    $(function () {
+      const cards = document.querySelectorAll('.card-item');
+      cards.forEach(card => {
+        card.addEventListener('click', function () {
+          card.closest('.card').classList.toggle('is-flipped');
+        });
+      });
+    });
+  </script>
+</body>

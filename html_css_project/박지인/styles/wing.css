@@ -1,0 +1,128 @@
+#wing {
+    --page-ratio: 1.4189;
+}
+
+#wing>label>.page_content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#wing>label>.page_content>* {
+    width: 100%;
+    position: relative;
+}
+
+#wing #wing_page_1+label .front {
+    background-image: url("../images/yisang.jpg");
+    background-position: 10% 70%;
+    background-size: cover;
+}
+
+#wing #wing_page_1+label .front .cover_top {
+    height: 10%;
+    background-color: var(--color-main);
+}
+
+#wing #wing_page_1+label .front .text {
+    height: 40%;
+    background-color: var(--color-main);
+    padding: 1rem 2rem 1rem 2rem;
+}
+
+#wing #wing_page_1+label .front .text h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    border-bottom: 5px solid #2e2e6e;
+    padding-bottom: 0.3rem;
+    margin-bottom: 0.2rem;
+}
+
+#wing #wing_page_1+label .front .text p {
+    font-size: 1.2rem;
+    font-weight: 100;
+}
+
+#wing #wing_page_1+label .back {
+    justify-content: center;
+}
+
+#wing #wing_page_1+label .back>h3 {
+    text-align: center;
+    font-weight: 700;
+    font-size: 1.5rem;
+    border-top: 1px solid var(--color-sub);
+    border-bottom: 1px solid var(--color-sub);
+    padding: 0.7rem 0 0.7rem 0;
+    width: 50%;
+    margin-bottom: 2rem;
+}
+
+#wing #wing_page_1+label .back>ol {
+    list-style-type: upper-roman;
+    font-size: 1rem;
+    font-weight: 400;
+    text-align: center;
+    line-height: 2rem;
+    width: 70%;
+}
+
+#wing #wing_page_2+label .front {
+    align-items: center;
+    justify-content: center;
+    text-align: start;
+    line-height: 2rem;
+    font-size: 1rem;
+    font-weight: 100;
+}
+
+#wing #wing_page_2+label .front>h3 {
+    width: 80%;
+    font-weight: 700;
+    font-size: 1.5rem;
+    padding-bottom: 0.3rem;
+    border-bottom: 1px solid var(--color-sub);
+    margin-bottom: 1.5rem;
+}
+
+#wing #wing_page_2+label .front>ul {
+    list-style-type: square;
+    padding-left: 3rem;
+}
+
+#wing #wing_page_2+label .back {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    line-height: 2rem;
+    font-size: 1.5rem;
+    font-weight: 500;
+    font-style: italic;
+}
+
+#wing #wing_page_3+label .front {
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+}
+
+#wing #wing_page_3+label .back {
+    padding: 2rem;
+    align-items: center;
+    justify-content: center;
+    text-align: start;
+    line-height: 3rem;
+    font-size: 1.3rem;
+    font-weight: 100;
+}
+
+#wing #wing_page_4+label .front {
+    padding: 2rem;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    line-height: 3rem;
+    font-size: 2rem;
+    font-weight: 7800;
+}

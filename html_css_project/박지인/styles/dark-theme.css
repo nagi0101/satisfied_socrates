@@ -1,0 +1,71 @@
+:root {
+    --color-main: #ffffff;
+    --color-sub: #111111;
+    --book-shadow: #eeeeee;
+}
+
+#darkmode_check:checked~* {
+    --color-main: #000000;
+    --color-sub: #ffffff;
+    --book-shadow: #444444;
+}
+
+#darkmode_check {
+    display: none;
+}
+
+.darkmode_button {
+    display: block;
+    position: absolute;
+    margin: 3rem;
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    padding: 0.5rem;
+    box-shadow: inset 0 0 15px #00000044, 0 0 15px #ffff0044;
+}
+
+#darkmode_check:checked~.darkmode_button {
+    box-shadow: inset 0 0 15px #ffffff88, 0 0 15px #ffffff88;
+}
+
+.darkmode_button>img {
+    width: 100%;
+    height: 100%;
+    filter: drop-shadow(0px -5px 15px #ffff00);
+}
+
+#darkmode_check:checked~.darkmode_button>img {
+    filter: invert(100%);
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --color-main: #111111;
+        --color-sub: #ffffff;
+        --book-shadow: #444444;
+    }
+
+    #darkmode_check:checked~* {
+        --color-main: #ffffff;
+        --color-sub: #111111;
+        --book-shadow: #eeeeee;
+    }
+
+    .darkmode_button {
+        box-shadow: inset 0 0 15px #ffffff88, 0 0 15px #ffffff88;
+    }
+
+    #darkmode_check:checked~.darkmode_button {
+        box-shadow: inset 0 0 15px #00000044, 0 0 15px #ffff0044;
+    }
+
+    .darkmode_button>img {
+        filter: invert(100%);
+    }
+
+    #darkmode_check:checked~.darkmode_button>img {
+        filter: drop-shadow(0px -5px 15px #ffff00);
+    }
+
+}
