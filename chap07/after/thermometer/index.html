@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Socrates thermometer</title>
+    <script defer src="./main.js"></script>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <h1>온도계</h1>
+    <p>섭씨 온도를 화씨 온도로 변환하는 함수와, 화씨 온도를 섭씨 온도로 변환하는 함수를 만들어보는 것이 목표입니다.</p>
+    <div class="container">
+        <div class="row">
+            <label for="celcius">섭씨:</label>
+            <input type="text" pattern="[0-9]*.?[0-9]*" name="celcius" id="celcius">
+        </div>
+        <div class="row">
+            <label for="fahrenheit">화씨:</label>
+            <input type="text" pattern="[0-9]*.?[0-9]*" name="fahrenheit" id="fahrenheit">
+        </div>
+        <div class="row">
+            <button class="cToF">섭씨→화씨</button>
+            <button class="fToC">화씨→섭씨</button>
+        </div>
+    </div>
+</body>
+</html>
