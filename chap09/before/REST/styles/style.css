@@ -1,0 +1,151 @@
+@import url("./reset.css");
+
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    padding: 5% 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+body>* {
+    width: 100%;
+}
+
+.post_container {
+    padding: 5%;
+    margin-bottom: 2rem;
+    box-shadow: 5px 5px 20px #bbbbbb;
+    border-radius: 15px;
+    overflow: auto;
+}
+
+.post_input_container>* {
+    width: 100%;
+}
+
+.author_container input {
+    width: 100%;
+    margin-bottom: 0.5rem;
+    padding: 0.5rem;
+    font-size: 1rem;
+}
+
+.textarea_container {
+    height: 6rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.textarea_container>* {
+    height: 100%;
+}
+
+.textarea_container textarea {
+    width: 90%;
+    font-size: 0.9rem;
+    resize: none;
+    padding: 0.5rem;
+    flex: 9;
+}
+
+.textarea_container button {
+    flex: 1;
+    margin-left: 1rem;
+    padding: 0.5rem 1rem;
+    background-color: #ffffff;
+    border: 1px solid #8888ff;
+    transition: background-color 0.3s, color 0.3s;
+    border-radius: 0.5rem;
+    user-select: none;
+    float: right;
+    width: 100%;
+}
+
+.textarea_container button:hover {
+    background-color: #8888ff;
+    color: #ffffff;
+}
+
+.edit_container {
+    display: none;
+}
+
+.editing > .view_container {
+    display: none;
+}
+
+.editing > .edit_container {
+    display: block;
+}
+
+.post {
+    border-bottom: 1px solid #bbbbbb;
+    padding: 1rem;
+}
+
+.post h2 {
+    font-weight: bold;
+    font-size: 1.3rem;
+    margin-bottom: 0.5rem;
+}
+
+.post .button_container {
+    margin-bottom: 0.4rem;
+}
+
+.post .button_container .button {
+    background-color: #eeeeee;
+    border: none;
+    padding: 0.2rem 0.5rem;
+    margin: 0 0.5rem 0.5rem 0;
+
+}
+
+.post .view_container button.delete,
+.post .edit_container button.cancel {
+    color: #ff8888;
+}
+
+.post .edit_container textarea {
+    width: 100%;
+    font-size: 0.9rem;
+    resize: none;
+    padding: 0.5rem;
+}
+
+.comment_area {
+    border-top: 3px dotted #aaa;
+    margin-top: 0.6rem;
+    padding-top: 0.4rem;
+}
+
+.comment_area .comment_container {
+    padding-left: 2rem;
+}
+
+.comment_area .comment_container .comment {
+    margin-bottom: 0.5rem;
+}
+
+.comment_input_container .author_container {
+    height: 2rem;
+}
+
+.comment_input_container .author_container input {
+    padding: 0.2rem;
+}
+
+.comment_input_container .textarea_container {
+    height: 3rem;
+}
